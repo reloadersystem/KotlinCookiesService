@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val sharedPreference = ShareDataUtil(this)
+
+       val sharedPreference = ShareDataUtil(this)
        val data = sharedPreference.save("nombre", "Reloader System")
 
         val endPoint = getConfiguration().create(APIService::class.java)

@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 
 class ShareDataUtil(val context: Context) {
 
-    private val PREFS_NAME = "Kotlin Share"
+    private val PREFS_NAME = "KotlinShare"
     val sharedPref: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     fun save(KEY_NAME: String, text: String) {
